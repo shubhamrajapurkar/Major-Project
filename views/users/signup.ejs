@@ -1,0 +1,44 @@
+<% layout("/layouts/boilerplate") %>
+
+<div class="row">
+    <div class="col-8 offset-2">
+        <br>
+        <h2>SignUp to JourneyNest</h2>
+        <form action="/signup" method="post" novalidate class="needs-validation">
+            <div class="mb-3">
+                <label for="name" class="form-lable">Name</label>
+                <input type="text" placeholder="Enter your name" name="name" class="form-control" required>
+                <div class="valid-feedback">
+                    name Looks good!  
+                </div>
+                <div class="invalid-feedback">
+                    enter a title
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="username" class="form-lable">Username</label>
+                <input type="text" placeholder="Enter Username" name="username" class="form-control" required>
+                <div class="valid-feedback">
+                    username Looks good!  
+                </div>
+                <div class="invalid-feedback">
+                    Username already taken
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-lable">EMAIL</label>
+                <input type="email" placeholder="Enter your email" name="email" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="password" class="form-lable">Password</label>
+                <input type="password"  name="password" class="form-control" required>
+               
+            </div>
+
+            <button class="btn btn-dark">Sign up</button>
+        </form>
+    </div>
+</div>
