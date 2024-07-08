@@ -68,9 +68,9 @@ const sessionOptions={
 
 
 // home route
-// app.get("/",(req,res)=>{
-//     res.send("root server connected");  
-// });
+app.get("/",(req,res)=>{
+    res.send("root server connected");  
+});
 
 
 
